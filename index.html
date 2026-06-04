@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>IdentityHub — Protect Your Privacy Online</title>
+  <meta name="description" content="IdentityHub offers services to help you take back control of your online identity. Keep your data secure, manage your digital footprint, and protect yourself from identity theft." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 26'><defs><linearGradient id='a' x1='6' y1='22' x2='26' y2='10' gradientUnits='userSpaceOnUse'><stop offset='0%25' stop-color='%23FFB088'/><stop offset='55%25' stop-color='%23FF7BAA'/><stop offset='100%25' stop-color='%23C97BFF'/></linearGradient><linearGradient id='b' x1='2' y1='4' x2='14' y2='16' gradientUnits='userSpaceOnUse'><stop offset='0%25' stop-color='%23B57BFF'/><stop offset='100%25' stop-color='%23FF7BAA'/></linearGradient></defs><path d='M18 6C23 6 27 10 27 15.5C27 21 23 24.5 17 24.5C12 24.5 8 22 7 17.5C11 19 16 18 18 14C19.5 11 18.5 8 18 6Z' fill='url(%23a)'/><ellipse cx='11' cy='9.5' rx='8.2' ry='7.5' fill='url(%23b)'/></svg>" />
+</head>
+<body>
+
+  <!-- ═══════════════════ HEADER ═══════════════════ -->
+  <header id="site-header">
+    <div class="container">
+      <nav class="header-inner">
+        <!-- Logo -->
+        <a href="#" class="logo" aria-label="IdentityHub home">
+          <span aria-hidden="true" class="logo-mark">
+            <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="logo-grad-bottom" x1="6" y1="22" x2="26" y2="10" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#FFB088" />
+                  <stop offset="55%" stop-color="#FF7BAA" />
+                  <stop offset="100%" stop-color="#C97BFF" />
+                </linearGradient>
+                <linearGradient id="logo-grad-top" x1="2" y1="4" x2="14" y2="16" gradientUnits="userSpaceOnUse">
+                  <stop offset="0%" stop-color="#B57BFF" />
+                  <stop offset="100%" stop-color="#FF7BAA" />
+                </linearGradient>
+              </defs>
+              <path d="M18 6 C 23 6, 27 10, 27 15.5 C 27 21, 23 24.5, 17 24.5 C 12 24.5, 8 22, 7 17.5 C 11 19, 16 18, 18 14 C 19.5 11, 18.5 8, 18 6 Z" fill="url(#logo-grad-bottom)" />
+              <ellipse cx="11" cy="9.5" rx="8.2" ry="7.5" fill="url(#logo-grad-top)" />
+            </svg>
+          </span>
+          <span class="logo-text">IdentityHub</span>
+        </a>
+
+        <!-- Desktop Nav -->
+        <ul class="nav-links">
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#about">About us</a></li>
+        </ul>
+
+        <!-- Desktop CTA -->
+        <div class="header-cta">
+          <a href="#pricing" class="btn btn-primary">
+            Start free trial
+            <span class="btn-arrow">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+            </span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button type="button" class="mobile-menu-btn" id="mobile-toggle" aria-label="Open menu" aria-expanded="false">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="4" y1="6" x2="20" y2="6"/>
+            <line x1="4" y1="12" x2="20" y2="12"/>
+            <line x1="4" y1="18" x2="20" y2="18"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+      <div class="container">
+        <ul>
+          <li><a href="#how">How it works</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#partners">Partners</a></li>
+          <li><a href="#about">About us</a></li>
+        </ul>
+        <a href="#pricing" class="btn btn-primary">
+          Start free trial
+          <span class="btn-arrow">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+          </span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ═══════════════════ HERO ═══════════════════ -->
+    <section class="hero" aria-label="Hero">
+      <!-- Aurora glow -->
+      <div class="halo-top" aria-hidden="true">
+        <div class="halo-drift"></div>
+      </div>
+      <div class="halo-secondary" aria-hidden="true"></div>
+
+      <div class="container">
+        <div class="hero-grid">
+          <!-- Text column -->
+          <div>
+            <h1 class="hero-title">
+              <span class="text-gradient-animated">Protect your</span><br/>
+              privacy online
+            </h1>
+
+            <p class="hero-subtitle">
+              IdentityHub offers a suite of services to help you take back
+              control of your online identity. Keep your data secure, manage
+              your digital footprint, and protect yourself from identity theft.
+            </p>
+
+            <div class="hero-buttons">
+              <a href="#pricing" class="btn btn-primary glow-pulse">
+                Start free trial
+                <span class="btn-arrow">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                </span>
+              </a>
+              <a href="#how" class="btn btn-secondary">
+                <svg class="play-icon" viewBox="0 0 24 24" fill="currentColor"><polygon points="5,3 19,12 5,21"/></svg>
+                How it work
+              </a>
+            </div>
+          </div>
+
+          <!-- Visual column: Shield + Floating cards -->
+          <div class="hero-visual">
+            <!-- Shield -->
+            <div class="shield-wrapper">
+              <div class="shield-inner">
+                <svg viewBox="0 0 380 420" class="shield-svg" aria-hidden="true">
+                  <defs>
+                    <radialGradient id="shield-grad" cx="50%" cy="30%" r="75%" fx="45%" fy="25%">
+                      <stop offset="0%" stop-color="#8EC9FF" />
+                      <stop offset="40%" stop-color="#4D9BFF" />
+                      <stop offset="100%" stop-color="#1E5BD9" />
+                    </radialGradient>
+                    <filter id="shield-glow" x="-15%" y="-15%" width="130%" height="130%">
+                      <feGaussianBlur stdDeviation="8" result="blur" />
+                      <feMerge>
+                        <feMergeNode in="blur" />
+                        <feMergeNode in="SourceGraphic" />
+                      </feMerge>
+                    </filter>
+                  </defs>
+                  <path d="M190 35 C 295 35, 360 90, 360 170 C 360 245, 305 320, 245 370 C 220 392, 202 402, 190 402 C 178 402, 160 392, 135 370 C 75 320, 20 245, 20 170 C 20 90, 85 35, 190 35 Z" fill="url(#shield-grad)" filter="url(#shield-glow)" />
+                </svg>
+                <!-- Lock icon -->
+                <svg class="lock-icon" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4" fill="none" />
+                </svg>
+              </div>
+            </div>
+
+            <!-- Floating card: Email -->
+            <div class="floating-card floating-card-1">
+              <div class="floating-card-icon icon-orange">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              </div>
+              <div>
+                <div class="floating-card-label">Email address</div>
+                <div class="floating-card-value">nija@gmail.com</div>
+              </div>
+            </div>
+
+            <!-- Floating card: Username -->
+            <div class="floating-card floating-card-2">
+              <div class="floating-card-icon icon-blue">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+              </div>
+              <div>
+                <div class="floating-card-label">User name</div>
+                <div class="floating-card-value">tufayel nija</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ FEATURE: REMOVAL ═══════════════════ -->
+    <section id="features" class="feature-section" aria-label="We remove your private information from the online">
+      <div class="container">
+        <div class="feature-grid">
+          <div class="feature-text">
+            <h2 class="feature-title">
+              We remove your<br/>
+              private information<br/>
+              from the online
+            </h2>
+            <div class="feature-body">
+              <p>People-search sites use government records and online databases to create detailed profiles of virtually every citizen.</p>
+              <p>They then sell this sensitive information online, where it can end up in the hands of hackers, identity thieves, and stalkers.</p>
+              <p>ReputationDefender stops people-search sites by opting our clients out of them.</p>
+            </div>
+          </div>
+          <div class="feature-visual">
+            <div class="mockup-wrapper">
+              <div class="mockup-back" aria-hidden="true"></div>
+              <div class="mockup-front" style="min-height: 260px;">
+                <!-- Image icon -->
+                <div class="removal-icon-box">
+                  <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#5B9FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/></svg>
+                </div>
+                <!-- Skeleton lines -->
+                <div class="skeleton-lines">
+                  <div class="shimmer-line" style="width: 85%; height: 10px; background: rgba(255,255,255,0.25);"></div>
+                  <div class="shimmer-line" style="width: 70%; height: 10px; background: rgba(255,255,255,0.15);"></div>
+                  <div class="shimmer-line" style="width: 50%; height: 10px; background: rgba(255,255,255,0.1);"></div>
+                </div>
+                <!-- Delete button -->
+                <button type="button" class="action-btn">Delete</button>
+                <!-- AI padlock badge -->
+                <div class="ai-badge" aria-hidden="true">
+                  <svg viewBox="0 0 64 76" width="64" height="76" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M18 30 V20 a14 14 0 0 1 28 0 V30" fill="none" stroke="#22C55E" stroke-width="3.5" stroke-linecap="round" />
+                    <rect x="6" y="28" width="52" height="44" rx="10" fill="#0A1628" stroke="#22C55E" stroke-width="2.5" />
+                    <text x="32" y="58" text-anchor="middle" fill="#22C55E" font-family="Manrope, system-ui, sans-serif" font-weight="700" font-size="18" letter-spacing="0.5">AI</text>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ FEATURE: CLOAKING ═══════════════════ -->
+    <section class="feature-section" aria-label="Cloaking identities stand in for your personal data">
+      <div class="container">
+        <div class="feature-grid reverse">
+          <div class="feature-text">
+            <h2 class="feature-title">
+              Cloaking identities<br/>
+              stand in for your<br/>
+              personal data
+            </h2>
+            <div class="feature-body">
+              <p>Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address.</p>
+            </div>
+          </div>
+          <div class="feature-visual">
+            <div class="credentials-grid">
+              <!-- 1. Username -->
+              <div class="credential-card gradient-hover">
+                <div class="credential-icon icon-blue">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <div>
+                  <div class="credential-label">Username</div>
+                  <div class="credential-value">+1 (456) 453-3456</div>
+                </div>
+              </div>
+              <!-- 2. Phone numbers -->
+              <div class="credential-card gradient-hover">
+                <div class="credential-icon icon-pink">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div>
+                  <div class="credential-label">Phone numbers</div>
+                  <div class="credential-value">+1 (456) 453-3456</div>
+                </div>
+              </div>
+              <!-- 3. Email address -->
+              <div class="credential-card gradient-hover">
+                <div class="credential-icon icon-orange">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                </div>
+                <div>
+                  <div class="credential-label">Email address</div>
+                  <div class="credential-value">+1 (456) 453-3456</div>
+                </div>
+              </div>
+              <!-- 4. Credit card -->
+              <div class="credential-card gradient-hover">
+                <div class="credential-icon icon-green">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+                </div>
+                <div>
+                  <div class="credential-label">Credit card</div>
+                  <div class="credential-value">+1 (456) 453-3456</div>
+                </div>
+              </div>
+              <!-- 5. Password -->
+              <div class="credential-card gradient-hover">
+                <div class="credential-icon icon-purple">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+                </div>
+                <div>
+                  <div class="credential-label">Password</div>
+                  <div class="credential-value">Kas3345-r32</div>
+                </div>
+              </div>
+              <!-- 6. One-time passcode -->
+              <div class="credential-card gradient-hover">
+                <div class="credential-icon icon-green">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                </div>
+                <div>
+                  <div class="credential-label">One-time passcode</div>
+                  <div class="credential-value">Kas3345-r32</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ FEATURE: SUPPORT ═══════════════════ -->
+    <section class="feature-section" aria-label="Dedicated Support">
+      <div class="container">
+        <div class="feature-grid">
+          <div class="feature-text">
+            <h2 class="feature-title">Dedicated Support</h2>
+            <div class="feature-body">
+              <p>Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address.</p>
+            </div>
+          </div>
+          <div class="feature-visual">
+            <div class="mockup-wrapper">
+              <div class="mockup-back" aria-hidden="true"></div>
+              <div class="mockup-front">
+                <!-- Chat message -->
+                <div class="chat-message">
+                  <div class="avatar-circle">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5B9FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                  </div>
+                  <div class="chat-skeleton">
+                    <div class="shimmer-line" style="width: 90%; height: 10px; background: rgba(255,255,255,0.25);"></div>
+                    <div class="shimmer-line" style="width: 78%; height: 10px; background: rgba(255,255,255,0.18);"></div>
+                    <div class="shimmer-line" style="width: 60%; height: 10px; background: rgba(255,255,255,0.12);"></div>
+                  </div>
+                </div>
+                <!-- Support row -->
+                <div class="support-row">
+                  <div class="avatar-circle headphones-avatar">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#5B9FFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"/><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"/></svg>
+                  </div>
+                  <button type="button" class="action-btn action-btn-sm">Reply</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ WHY CHOOSE US ═══════════════════ -->
+    <section id="how" class="feature-section" aria-label="Why choose us">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Why choose us</h2>
+          <p style="max-width: 500px;">We are the only service that provides all 3 services as a packaged service</p>
+        </div>
+
+        <div class="why-grid">
+          <!-- Card 1: Personal information removal -->
+          <div class="why-card gradient-hover">
+            <h3>Personal information removal</h3>
+            <p>We purge your personal data from online sources, using automated and manual methods. A privacy expert oversees removals and handles any manual activities.</p>
+            <div class="removal-mini">
+              <div class="removal-mini-icon">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+              </div>
+              <div class="skeleton-line-row">
+                <div class="shimmer-line" style="width: 95%; height: 10px; background: rgba(255,255,255,0.12);"></div>
+                <div class="shimmer-line" style="width: 80%; height: 10px; background: rgba(255,255,255,0.1);"></div>
+                <div class="shimmer-line" style="width: 60%; height: 10px; background: rgba(255,255,255,0.08);"></div>
+              </div>
+              <button type="button" class="delete-btn-mini">Delete</button>
+            </div>
+          </div>
+
+          <!-- Card 2: Cloaking alias profiles -->
+          <div class="why-card gradient-hover">
+            <h3>Cloaking alias profiles</h3>
+            <p>You'll receive regular reports on your privacy status and any outstanding threats. If new records become associated with you, we will send you an alert.</p>
+            <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 20px;">
+              <!-- Shield badge -->
+              <div class="shield-hex">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              </div>
+              <!-- User row -->
+              <div class="cloaking-user-row">
+                <div class="cloaking-user-icon">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                </div>
+                <div class="cloaking-skeletons">
+                  <div class="shimmer-line" style="width: 70%; height: 8px; background: rgba(255,255,255,0.11);"></div>
+                  <div class="shimmer-line" style="width: 50%; height: 8px; background: rgba(255,255,255,0.08);"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3: Detailed Reporting (wide) -->
+          <div class="why-card wide gradient-hover">
+            <div class="why-card-row">
+              <div class="why-card-text">
+                <h3>Detailed Reporting</h3>
+                <p>You'll receive regular reports on your privacy status and any outstanding threats. If new records become associated with you, we will send you an alert.</p>
+              </div>
+              <div>
+                <div class="reporting-row">
+                  <div class="reporting-icon-box">
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                  </div>
+                  <div class="reporting-skeletons">
+                    <div class="shimmer-line" style="width: 100%; height: 10px; background: rgba(255,255,255,0.12);"></div>
+                    <div class="shimmer-line" style="width: 75%; height: 10px; background: rgba(255,255,255,0.1);"></div>
+                    <div class="shimmer-line" style="width: 60%; height: 10px; background: rgba(255,255,255,0.08);"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ TESTIMONIALS ═══════════════════ -->
+    <section class="testimonials-section" aria-label="Testimonials">
+      <div class="container">
+        <div class="section-heading">
+          <h2>The word on IdentityHub</h2>
+          <p style="max-width: 640px;">Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address.</p>
+        </div>
+
+        <div class="testimonials-masonry">
+          <!-- Card 1 -->
+          <div class="testimonial-card gradient-hover">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar"></div>
+              <div class="testimonial-name">Cameron Williamson</div>
+            </div>
+            <p class="testimonial-text">Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="testimonial-card gradient-hover">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar"></div>
+              <div class="testimonial-name">Darrell Steward</div>
+            </div>
+            <p class="testimonial-text">Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address.</p>
+          </div>
+          <!-- Card 3 (longer) -->
+          <div class="testimonial-card gradient-hover">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar"></div>
+              <div class="testimonial-name">Leslie Alexander</div>
+            </div>
+            <p class="testimonial-text">Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address. Stalkers and disgruntled acquaintances use the Internet to find addresses, phone numbers and other personal details about their targets. Identity thieves use personal information.</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="testimonial-card gradient-hover">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar"></div>
+              <div class="testimonial-name">Floyd Miles</div>
+            </div>
+            <p class="testimonial-text">Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address.</p>
+          </div>
+          <!-- Card 5 (longer) -->
+          <div class="testimonial-card gradient-hover">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar"></div>
+              <div class="testimonial-name">Guy Hawkins</div>
+            </div>
+            <p class="testimonial-text">Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address. Identity thieves use personal information found online to impersonate their.</p>
+          </div>
+          <!-- Card 6 -->
+          <div class="testimonial-card gradient-hover">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar"></div>
+              <div class="testimonial-name">Savannah Nguyen</div>
+            </div>
+            <p class="testimonial-text">Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address.</p>
+          </div>
+          <!-- Card 7 -->
+          <div class="testimonial-card gradient-hover">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar"></div>
+              <div class="testimonial-name">Brooklyn Simmons</div>
+            </div>
+            <p class="testimonial-text">Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address.</p>
+          </div>
+          <!-- Card 8 (longer) -->
+          <div class="testimonial-card gradient-hover">
+            <div class="testimonial-header">
+              <div class="testimonial-avatar"></div>
+              <div class="testimonial-name">Cody Fisher</div>
+            </div>
+            <p class="testimonial-text">Forget about spam, advertising mailings, hacking and attacking robots. Keep your real mailbox clean and secure. Temp Mail provides temporary, secure, anonymous, free, disposable email address. Identity thieves use personal information found online to impersonate their.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════ PRICING ═══════════════════ -->
+    <section id="pricing" class="pricing-section" aria-label="Pricing">
+      <div class="container">
+        <div class="section-heading">
+          <h2>Pricing</h2>
+          <p style="max-width: 640px;">You can stay on the $56 plan until you have enough active user to justify managing their data or you start settings things.</p>
+        </div>
+
+        <!-- Billing toggle -->
+        <div class="billing-toggle">
+          <div class="toggle-wrapper" role="tablist" aria-label="Billing period">
+            <button type="button" role="tab" aria-selected="true" class="toggle-btn active" data-period="yearly">Billed yearly -20%</button>
+            <button type="button" role="tab" aria-selected="false" class="toggle-btn" data-period="monthly">Billed monthly</button>
+          </div>
+        </div>
+
+        <!-- Pricing cards -->
+        <div class="pricing-grid">
+          <!-- Free -->
+          <div class="price-card gradient-hover">
+            <h3>Start here</h3>
+            <div class="price-amount">
+              <span class="price-value" data-yearly="0" data-monthly="0">$0</span>
+            </div>
+            <div class="price-period">Per month</div>
+            <ul class="price-features">
+              <li class="price-feature">
+                <span class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                Type of threat
+              </li>
+              <li class="price-feature">
+                <span class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                Online presence
+              </li>
+              <li class="price-feature">
+                <span class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                Access to all modules
+              </li>
+              <li class="price-feature disabled">
+                <span class="empty-circle"></span>
+                Notability
+              </li>
+              <li class="price-feature disabled">
+                <span class="empty-circle"></span>
+                Optimize existing websites
+              </li>
+              <li class="price-feature disabled">
+                <span class="empty-circle"></span>
+                Search autocomplete
+              </li>
+            </ul>
+            <button type="button" class="price-cta">Request access</button>
+            <div class="price-note">It's free so why not</div>
+          </div>
+
+          <!-- Single (featured) -->
+          <div class="price-card featured gradient-hover">
+            <h3>Single</h3>
+            <div class="price-amount">
+              <span class="price-value gradient-text" data-yearly="56" data-monthly="70">$56</span>
+            </div>
+            <div class="price-period">Per month</div>
+            <ul class="price-features">
+              <li class="price-feature">
+                <span class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                Type of threat
+              </li>
+              <li class="price-feature">
+                <span class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                Online presence
+              </li>
+              <li class="price-feature">
+                <span class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                Access to all modules
+              </li>
+              <li class="price-feature">
+                <span class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                Notability
+              </li>
+              <li class="price-feature">
+                <span class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                Optimize existing websites
+              </li>
+              <li class="price-feature">
+                <span class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                Search autocomplete
+              </li>
+            </ul>
+            <button type="button" class="price-cta featured">Request access</button>
+            <div class="price-note">Save $23 per year</div>
+          </div>
+
+          <!-- Family -->
+          <div class="price-card gradient-hover">
+            <h3>Family</h3>
+            <div class="price-amount">
+              <span class="price-value" data-yearly="124" data-monthly="155">$124</span>
+            </div>
+            <div class="price-period">Per month</div>
+            <ul class="price-features">
+              <li class="price-feature">
+                <span class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                Type of threat
+              </li>
+              <li class="price-feature">
+                <span class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                Online presence
+              </li>
+              <li class="price-feature">
+                <span class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                Access to all modules
+              </li>
+              <li class="price-feature">
+                <span class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                Notability
+              </li>
+              <li class="price-feature">
+                <span class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                Optimize existing websites
+              </li>
+              <li class="price-feature">
+                <span class="check-circle"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+                Search autocomplete
+              </li>
+            </ul>
+            <button type="button" class="price-cta">Request access</button>
+            <div class="price-note">Save $23 per year</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══════════════════ FOOTER ═══════════════════ -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Logo column -->
+        <div>
+          <a href="#" class="logo" aria-label="IdentityHub home">
+            <span aria-hidden="true" class="logo-mark">
+              <svg width="30" height="26" viewBox="0 0 30 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                  <linearGradient id="logo-grad-bottom-f" x1="6" y1="22" x2="26" y2="10" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#FFB088" />
+                    <stop offset="55%" stop-color="#FF7BAA" />
+                    <stop offset="100%" stop-color="#C97BFF" />
+                  </linearGradient>
+                  <linearGradient id="logo-grad-top-f" x1="2" y1="4" x2="14" y2="16" gradientUnits="userSpaceOnUse">
+                    <stop offset="0%" stop-color="#B57BFF" />
+                    <stop offset="100%" stop-color="#FF7BAA" />
+                  </linearGradient>
+                </defs>
+                <path d="M18 6 C 23 6, 27 10, 27 15.5 C 27 21, 23 24.5, 17 24.5 C 12 24.5, 8 22, 7 17.5 C 11 19, 16 18, 18 14 C 19.5 11, 18.5 8, 18 6 Z" fill="url(#logo-grad-bottom-f)" />
+                <ellipse cx="11" cy="9.5" rx="8.2" ry="7.5" fill="url(#logo-grad-top-f)" />
+              </svg>
+            </span>
+            <span class="logo-text">IdentityHub</span>
+          </a>
+        </div>
+
+        <!-- Column 1 -->
+        <div class="footer-column">
+          <h4>It's free so why not</h4>
+          <ul>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 2 -->
+        <div class="footer-column">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#">Our company</a></li>
+            <li><a href="#">Security</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <!-- Column 3 -->
+        <div class="footer-column">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy policy</a></li>
+            <li><a href="#">Terms of service</a></li>
+            <li><a href="#">Prohibited use policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Social links -->
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          Company
+        </a>
+        <a href="#" aria-label="Youtube">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z"/><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="currentColor"/></svg>
+          Youtube
+        </a>
+        <a href="#" aria-label="X">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          X
+        </a>
+        <a href="#" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ═══════════════════ JAVASCRIPT ═══════════════════ -->
+  <script>
+    // 1. Pricing toggle
+    const toggleBtns = document.querySelectorAll('.toggle-btn');
+    const priceValues = document.querySelectorAll('.price-value');
+
+    toggleBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // Update active state
+        toggleBtns.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        // Update prices
+        const period = btn.dataset.period;
+        priceValues.forEach(el => {
+          const price = el.dataset[period];
+          el.textContent = '$' + price;
+        });
+      });
+    });
+
+    // 2. Sticky header blur on scroll
+    const header = document.getElementById('site-header');
+    window.addEventListener('scroll', () => {
+      header.classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+
+    // 3. Mobile menu toggle
+    const mobileToggle = document.getElementById('mobile-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    mobileToggle.addEventListener('click', () => {
+      const isOpen = mobileMenu.classList.toggle('open');
+      mobileToggle.setAttribute('aria-expanded', isOpen);
+      mobileToggle.setAttribute('aria-label', isOpen ? 'Close menu' : 'Open menu');
+      document.body.style.overflow = isOpen ? 'hidden' : '';
+
+      // Update icon
+      if (isOpen) {
+        mobileToggle.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>';
+      } else {
+        mobileToggle.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>';
+      }
+    });
+
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mobileMenu.classList.remove('open');
+        mobileToggle.setAttribute('aria-expanded', 'false');
+        document.body.style.overflow = '';
+        mobileToggle.innerHTML = '<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="18" x2="20" y2="18"/></svg>';
+      });
+    });
+  </script>
+
+</body>
+</html>
